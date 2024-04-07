@@ -18,7 +18,7 @@
 <form class="form-horizontal dark:text-dark-txt" method="post"  enctype="multipart/form-data">
 {% csrf_token %}
 <div class="mt-1 sm:mt-0 sm:col-span-2">
-      <img class="h-28 w-full bg-cover" src="{{user.profile.banner.url}}" alt="{{profile.user.username}} Banner Picture">
+      <img class="h-28 w-full bg-cover" src="{{user.profile.banner.url}}" alt="{{profile.user.username}} Banner">
 
       <div class="max-w-lg flex justify-center px-6 pt-5 pb-6 border-2 dark:border-dark-third border-gray-300 border-dashed rounded-md">
         {{form.banner}}

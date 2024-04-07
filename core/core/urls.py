@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import HomeView #Logout
+from .views import HomeView
 
 
 urlpatterns = [
@@ -12,8 +12,6 @@ urlpatterns = [
     path('users/', include('accounts.urls', namespace='users')),
 
     path('social/', include('social.urls', namespace='social')), 
-
-    # path('', Logout, name = "account_logout"),
 
     path('', HomeView.as_view(), name="home"),
 ]

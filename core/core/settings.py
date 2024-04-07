@@ -79,8 +79,8 @@ ACCOUNT_LOGIN_ATTEMPTS_LIMIT = 3
 ACCOUNT_LOGIN_ATTEMPTS_TIMEOUT =300
 LOGIN_REDIRECT_URL = "/"
 LOGIN_URL = "account_login"
-# LOGOUT_REDIRECT_URL = "home"
-# LOGOUT_URL = "account_logout"
+LOGOUT_REDIRECT_URL = "home"
+LOGOUT_URL = "account_logout"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
